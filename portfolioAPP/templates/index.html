@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {%load static%}
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="This is the portfolio for Carlos R. Caceres Martinez, a gradute from the Coding Dojo in Bellevue and a future student at UW">
+    <meta name="keywords" content="Portfolio, Django, Python, MySQL, CSS, BootStrap, PureCSS, VanillaCSS, JS, JQuery, AWS, Ubuntu, Unix, MacOS, Windows">
+    <meta name="author" content="Carlos R. Caceres Martinez">
+    <link rel="stylesheet" href="{% static 'css/index.css' %}">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <link rel="icon" href="{% static 'img/me_icon.svg' %}">
+    <title>Carlitos | Welcome</title>
+    <script>
+        function myFunction() {
+            var element = document.body;
+ element.classList.toggle("dark-mode");
+        }
+        </script>
+    <style>
+    /* Mobile - Portrain */
+        @media only screen and (max-width:480px){
+            body {
+                background: url("{% static 'img/lightMode/tablet-option-2.JPEG' %}") no-repeat left center fixed;
+                background-size: cover;
+            }
+        }
+    /* mobile landscape / tablet portrait */
+        @media only screen and (max-width:768px){
+            body {
+                background: url("{% static 'img/lightMode/tablet-option-2.JPEG' %}") no-repeat left center fixed;
+                background-size: cover;
+            }
+        }
+
+    /* tablet landscape */ 
+        @media only screen and (max-width:1024px){
+            
+        }
+
+        /* Laptop Screen */
+        @media only screen and (min-width:768px){
+            
+        }
+
+        /* Monitor Screen*/
+
+        @media only screen and (min-width:1440px){
+            
+        }
+
+        @media only screen and (min-width:1920px){
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <!-- <button onclick="myFunction()">Toggle dark mode</button> -->
+        <div class="profile-card">
+            <div class="bio-pic">
+                <img id="bio-img" src="{% static 'img/bio.jpg' %}" alt="Bio Pic">
+            </div>
+            <div class="bio-name">
+                <h1 id="name">Carlos R. Cáceres Martínez</h1> 
+            </div>
+            <div class="social-media">
+                <div class="link">
+                    <a href="mailto:carloscaceres041@gmail.com"><img id="gmail" src="{% static 'img/Gmail-Logo.wine.svg' %}" alt="Gmail"></a>
+                </div>
+                <div class="link-2">
+                    <a href="#"><img id="whatsapp"src="{% static 'img/whatsapp.svg' %}" alt="WhatsApp"></a>
+                </div>
+                <div class="link-3">
+                    <a href="https://github.com/carlitos-206"><img id="github" src="{% static 'img/git-hub.svg' %}" alt="GitHub"></a>
+                </div>
+                <div class="link-4">
+                    <a href="https://www.linkedin.com/in/carlitos206/"><img id="linkedin" src="{% static 'img/linkedin.svg' %}" alt="LinkedIn"></a>
+                </div>
+            </div>
+            <div class="social-media-2">
+                <div class="link-5">
+                    <a href="https://www.instagram.com/carlitos.206/"><img id="ig" src="{% static 'img/ig-logo.svg.webp' %}" alt="Instagram"></a>
+                </div>
+                <div class="link-6">
+                    <a href="https://www.upwork.com/freelancers/~0127847c343f837820"><img id="upwork" src="{% static 'img/upwork-logo.svg' %}" alt="UpWork"></a>
+                </div>
+                <div class="link-7">
+                    <a href="https://www.youtube.com/channel/UCfJtIgTcGEX_D0TLjFi-COQ"><img id="youtube" src="{% static 'img/youtube-logo.svg' %}" alt="YouTube"></a>
+                </div>
+            </div>
+            <div class="content">
+                <div class="accordion accordion-flush" id="accordionFlushExample">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="flush-headingOne">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                                <h3>About Me</h3>
+                            </button>
+                        </h2>
+                    <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">
+                            <p>Hello I am recent gradute of the Coding Dojo in Bellevue, Wa.</p>
+                            <p>There I accuquired a certification in Python for Web Developement</p>
+                        </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="flush-headingTwo">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                                <h3>Skills</h3>
+                            </button>
+                        </h2>
+                        <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body">
+                                <h6 id="skill-title"">Full Stack Python Web Developer</h4>
+                                    <ul>
+                                        <li id="list-category" >Front-End</li>
+                                            <ul>
+                                                <li>HTML5</li>
+                                                <li>CSS</li>
+                                                    <ul>
+                                                        <li>BootStrap</li>
+                                                        <li>Pure CSS</li>
+                                                        <li>Animate CSS</li>
+                                                        <li>Half Moon</li>
+                                                    </ul>
+                                                <li>JavaScript</li>
+                                                    <ul>
+                                                        <li>JQuery</li>
+                                                    </ul>
+                                            </ul>
+                                            <li id="list-category" >Back-End</li>
+                                                <ul>
+                                                    <li>Python</li>
+                                                        <ul>
+                                                            <li>Django 2.2 + ORM</li>
+                                                        </ul>
+                                                    <li>MySQL</li>
+                                                        <ul>
+                                                            <li>MySQL WorkBench</li>
+                                                        </ul>
+                                                </ul>
+                                                <li id="list-category" >Version Control</li>
+                                                    <ul>
+                                                        <li>Git Hub</li>
+                                                    </ul>
+                                                <li id="list-category" >Deployment</li>
+                                                    <ul>
+                                                        <li>AWS EC2 Server</li>
+                                                            <ul>
+                                                                <li>Ubuntu 20.04LTS</li>
+                                                            </ul>
+                                                    </ul>
+                                                <li id="list-category" >OS/Shells</li>
+                                                    <ul>
+                                                        <li>Linux</li>
+                                                            <ul>
+                                                                <li>Ubuntu 20.04LTS</li>
+                                                            </ul>
+                                                        <li>Unix</li>
+                                                            <ul>
+                                                                <li>Git Bash</li>
+                                                                <li>Mac OS</li>
+                                                            </ul>
+                                                        <li>Windows</li>
+                                                    </ul>
+                                                <li id="list-category" >VIM</li>
+                                                <li id="list-category" ><a href="{% static 'Resume.pdf' %}" download>Download Full Resume</a></li>
+                                    </ul>
+                            </div>
+                    </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="flush-headingThree">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                                <h3>Projects</h3>
+                            </button>
+                        </h2>
+                        <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body">
+                               <p><a href="https://github.com/carlitos-206/first-app/tree/main">Terminal APP using Python</a></p>   
+                            </div>
+                            </div>
+                        </div>
+                    </div>
+            </div>
+            <div class="footer"></div>
+        </div>
+    </div>
+</body>
+</html>
