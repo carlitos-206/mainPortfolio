@@ -27,6 +27,12 @@
                 background-size: cover;
             }
         }
+        @media only screen and (min-width:480px){
+            body {
+                background: url("{% static 'img/lightMode/tablet-option-2.JPEG' %}") no-repeat left center fixed;
+                background-size: cover;
+            }
+        }
     /* mobile landscape / tablet portrait */
         @media only screen and (max-width:768px){
             body {
@@ -74,21 +80,21 @@
                     <a href="#"><img id="whatsapp"src="{% static 'img/whatsapp.svg' %}" alt="WhatsApp"></a>
                 </div>
                 <div class="link-3">
-                    <a href="https://github.com/carlitos-206"><img id="github" src="{% static 'img/git-hub.svg' %}" alt="GitHub"></a>
+                    <a target="_blank" rel="noopener" href="https://github.com/carlitos-206"><img id="github" src="{% static 'img/git-hub.svg' %}" alt="GitHub"></a>
                 </div>
                 <div class="link-4">
-                    <a href="https://www.linkedin.com/in/carlitos206/"><img id="linkedin" src="{% static 'img/linkedin.svg' %}" alt="LinkedIn"></a>
+                    <a target="_blank" rel="noopener" href="https://www.linkedin.com/in/carlitos206/"><img id="linkedin" src="{% static 'img/linkedin.svg' %}" alt="LinkedIn"></a>
                 </div>
             </div>
             <div class="social-media-2">
                 <div class="link-5">
-                    <a href="https://www.instagram.com/carlitos.206/"><img id="ig" src="{% static 'img/ig-logo.svg.webp' %}" alt="Instagram"></a>
+                    <a target="_blank" rel="noopener" href="https://www.instagram.com/carlitos.206/"><img id="ig" src="{% static 'img/ig-logo.svg.webp' %}" alt="Instagram"></a>
                 </div>
                 <div class="link-6">
-                    <a href="https://www.upwork.com/freelancers/~0127847c343f837820"><img id="upwork" src="{% static 'img/upwork-logo.svg' %}" alt="UpWork"></a>
+                    <a target="_blank" rel="noopener" href="https://www.upwork.com/freelancers/~0127847c343f837820"><img id="upwork" src="{% static 'img/upwork-logo.svg' %}" alt="UpWork"></a>
                 </div>
                 <div class="link-7">
-                    <a href="https://www.youtube.com/channel/UCfJtIgTcGEX_D0TLjFi-COQ"><img id="youtube" src="{% static 'img/youtube-logo.svg' %}" alt="YouTube"></a>
+                    <a target="_blank" rel="noopener" href="https://www.youtube.com/channel/UCfJtIgTcGEX_D0TLjFi-COQ"><img id="youtube" src="{% static 'img/youtube-logo.svg' %}" alt="YouTube"></a>
                 </div>
             </div>
             <div class="content">
@@ -113,62 +119,70 @@
                             </button>
                         </h2>
                         <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
-                            <div class="accordion-body">
+                            <div id="skills-accordion"class="accordion-body">
                                 <h6 id="skill-title"">Full Stack Python Web Developer</h4>
-                                    <ul>
-                                        <li id="list-category" >Front-End</li>
-                                            <ul>
-                                                <li>HTML5</li>
-                                                <li>CSS</li>
-                                                    <ul>
-                                                        <li>BootStrap</li>
-                                                        <li>Pure CSS</li>
-                                                        <li>Animate CSS</li>
-                                                        <li>Half Moon</li>
-                                                    </ul>
-                                                <li>JavaScript</li>
-                                                    <ul>
-                                                        <li>JQuery</li>
-                                                    </ul>
-                                            </ul>
-                                            <li id="list-category" >Back-End</li>
+                                    <div class="list-1">
+                                        <ul>
+                                            <li>FRONT-END</li>
                                                 <ul>
-                                                    <li>Python</li>
+                                                    <li>HTML5</li>
+                                                    <li>CSS</li>
                                                         <ul>
-                                                            <li>Django 2.2 + ORM</li>
+                                                            <li>BootStrap</li>
+                                                            <li>PureCSS</li>
+                                                            <li>Animate CSS</li>
                                                         </ul>
-                                                    <li>MySQL</li>
+                                                    <li>JavaScript</li>
                                                         <ul>
-                                                            <li>MySQL WorkBench</li>
+                                                            <li>JQuery</li>
                                                         </ul>
                                                 </ul>
-                                                <li id="list-category" >Version Control</li>
-                                                    <ul>
-                                                        <li>Git Hub</li>
-                                                    </ul>
-                                                <li id="list-category" >Deployment</li>
-                                                    <ul>
-                                                        <li>AWS EC2 Server</li>
-                                                            <ul>
-                                                                <li>Ubuntu 20.04LTS</li>
-                                                            </ul>
-                                                    </ul>
-                                                <li id="list-category" >OS/Shells</li>
-                                                    <ul>
-                                                        <li>Linux</li>
-                                                            <ul>
-                                                                <li>Ubuntu 20.04LTS</li>
-                                                            </ul>
-                                                        <li>Unix</li>
-                                                            <ul>
-                                                                <li>Git Bash</li>
-                                                                <li>Mac OS</li>
-                                                            </ul>
-                                                        <li>Windows</li>
-                                                    </ul>
-                                                <li id="list-category" >VIM</li>
-                                                <li id="list-category" ><a href="{% static 'Resume.pdf' %}" download>Download Full Resume</a></li>
-                                    </ul>
+                                            <li>BACK-END</li>
+                                                <ul>
+                                                    <li>Python3</li>
+                                                        <ul>
+                                                            <li>Django 2.2 + ORM</li>
+                                                            <li>Flask 2.2 + MySQL</li>
+                                                        </ul>
+                                                </ul>
+                                            <li>DATABASE MANAGEMENT</li>
+                                                <ul>
+                                                    <li>Relational</li>
+                                                        <ul>
+                                                            <li>MySQL</li>
+                                                        </ul>
+                                                </ul>
+                                        </ul>
+                                    </div>
+                                    <div class="list-2">
+                                        <ul>
+                                            <li>VERSION CONTROL</li>
+                                                <ul>
+                                                    <li>GitHub</li>
+                                                </ul>
+                                            <li>DEPLOYMENT</li>
+                                                <ul>
+                                                    <li>AWS EC2 Server</li>
+                                                        <ul>
+                                                            <li>Ubuntu 20.04LTS</li>
+                                                        </ul>
+                                                </ul>
+                                            <li>OS / SHELLS</li>
+                                                <ul>
+                                                    <li>Linux</li>
+                                                        <ul>
+                                                            <li>Ubuntu 20.04LTS</li>
+                                                        </ul>
+                                                    <li>Unix</li>
+                                                        <ul>
+                                                            <li>Git Hub: Git Bash</li>
+                                                            <li>MacOS</li>
+                                                        </ul>
+                                                    <li>Windows</li>
+                                                </ul>
+                                            <p><a href="{% static 'Resume.pdf' %}" download>DOWNLOAD FULL RESUME</a></p>
+                                        </ul>
+                                    </div>
                             </div>
                     </div>
                     </div>
@@ -180,7 +194,12 @@
                         </h2>
                         <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
                             <div class="accordion-body">
-                               <p><a href="https://github.com/carlitos-206/first-app/tree/main">Terminal APP using Python</a></p>   
+                                <ul>
+                                    <li><a href="https://github.com/carlitos-206/first-app.git" target="_blank">Terminal App Using Python</a></li>
+                                        <ul>
+                                            <li class="git-clone">$ git clone 'https://github.com/carlitos-206/first-app.git'</li>
+                                        </ul>
+                                </ul>
                             </div>
                             </div>
                         </div>
