@@ -2,7 +2,8 @@
     padding: 0px;
     margin: 0px;
 }
-@media only screen and (max-width:480px){
+/* Small phones line iPhone 5 SE */
+@media screen and (max-width:374px) {
     .wrapper{
         display: flex;
         justify-content: center;
@@ -35,17 +36,17 @@
             position: relative;
             left: 32.5%;
             height:min-content;
-            bottom: 120px;
+            bottom: 100px;
         }
         #name {
-            font-size: calc(1rem + .1vw);
+            font-size: calc(.8rem + .3vw);
         }
         .social-media{
             width: 70%;
             height: min-content;
             position: relative;
             left: 30%;
-            bottom: 120px;
+            bottom: 100px;
         }
         .link{
             width: min-content;
@@ -87,12 +88,13 @@
             #linkedin{
                 width: 5.3vh;
             }
+
         .social-media-2{
             width: 70%;
             height: min-content;
             position: relative;
             left: 30%;
-            bottom: 75px;
+            bottom: 60px;
         }
             .link-5{
                 width: min-content;
@@ -125,41 +127,71 @@
             #youtube{
                 width: 5vh;
             }
-        .content{
-            width: 90%;
-            height: fit-content;
+        #section-label-1{
             position: relative;
-            left: 5%;
-            bottom: 20px;
+            left: 20%;
         }
-        h3 {
+        #section-label-2{
             position: relative;
-            top: 5px;
-            font-family: cursive;
+            left: 30%;
         }
-        #skill-title{
-            font-weight:bolder; 
-            font-size:1.9vh; 
-            text-align:center;
-            width: 100%;
-        }
-        
-
-
-
-
-
-        #github-2{
+        #section-label-3{
             position: relative;
             left: 25%;
-            width: 25%;
+        }
+        .content{
+            width: 90%;
+            height: fit-content;
+            position: relative;
+            left: 5%;
+            bottom: 20px;
+        }
+        h3 {
+            position: relative;
+            top: 5px;
+            font-family: cursive;
+        }
+        #skill-title{
+            font-weight:bolder; 
+            font-size:3vh; 
+            text-align:center;
+            width: 100%;
+        }
+        li {
+            font-size: 2vh;
+        }
+        .category{
+            font-weight: bold;
+        }
+        #resume-pdf{
+            font-size:2vh;
+        }
+        .projects{
+            font-size: 2.4vh;
         }
 
-    }
+        .git-clone{
+            display: none;
+        }
+
+}
 
 
 
-@media only screen and (min-width:481px){
+
+
+
+
+
+
+
+
+
+
+
+
+/* Regular phones like Iphone X + */
+@media only screen and (min-width:375px){
     .wrapper{
         display: flex;
         justify-content: center;
@@ -192,10 +224,195 @@
             position: relative;
             left: 32.5%;
             height:min-content;
-            bottom: 120px;
+            bottom: 100px;
         }
         #name {
-            font-size: calc(1rem + .1vw);
+            font-size: calc(.9rem + .6vw);
+        }
+        .social-media{
+            width: 70%;
+            height: min-content;
+            position: relative;
+            left: 30%;
+            bottom: 100px;
+        }
+        .link{
+            width: min-content;
+            height: min-content;
+            position: relative;
+            left: 4%;
+            position: absolute;
+        }
+            #gmail{
+                width: 8.5vh;
+            }
+        .link-2{
+            width: min-content;
+            height: min-content;
+            position: relative;
+            left: 30%;
+            position: absolute;
+        }
+            #whatsapp{
+                width: 5vh;
+            }
+        .link-3{
+            width: min-content;
+            height: min-content;
+            position: relative;
+            left: 50%;
+            position: absolute;
+        }
+            #github{
+                width: 5.5vh;
+            }
+        .link-4{
+            width: min-content;
+            height: min-content;
+            position: relative;
+            left: 72%;
+            position: absolute;
+        }
+            #linkedin{
+                width: 5.3vh;
+            }
+
+        .social-media-2{
+            width: 70%;
+            height: min-content;
+            position: relative;
+            left: 30%;
+            bottom: 60px;
+        }
+            .link-5{
+                width: min-content;
+                height: min-content;
+                position: relative;
+                left: 20%;
+                position: absolute;
+            }
+            #ig{
+                width: 5vh;
+            }
+            .link-6{
+                width: min-content;
+                height: min-content;
+                position: relative;
+                left: 40%;
+                position: absolute;
+            }
+            #upwork{
+                width: 5vh;
+                border-radius: 50%;
+            }
+            .link-7{
+                width: min-content;
+                height: min-content;
+                position: relative;
+                left: 60%;
+                position: absolute;
+            }
+            #youtube{
+                width: 5vh;
+            }
+        #section-label-1{
+            position: relative;
+            left: 20%;
+        }
+        #section-label-2{
+            position: relative;
+            left: 30%;
+        }
+        #section-label-3{
+            position: relative;
+            left: 25%;
+        }
+        .content{
+            width: 90%;
+            height: fit-content;
+            position: relative;
+            left: 5%;
+            bottom: 20px;
+        }
+        h3 {
+            position: relative;
+            top: 5px;
+            font-family: cursive;
+        }
+        #skill-title{
+            font-weight:bolder; 
+            font-size:2.5vh; 
+            text-align:center;
+            width: 100%;
+        }
+        li {
+            font-size: 1.9vh;
+        }
+        .category{
+            font-weight: bold;
+        }
+        #resume-pdf{
+            position: relative;
+            top: 25px;
+            font-size:2vh;
+        }
+        .projects{
+            font-size: 2.15vh;
+        }
+
+        .git-clone{
+            display: none;
+        }
+
+    }
+
+
+
+
+
+
+
+
+/* Google Pixel */
+    @media only screen and (max-width:480px){
+        .wrapper{
+        display: flex;
+        justify-content: center;
+    }
+    .profile-card {
+        justify-content: center;
+        background-color: rgba(240, 240, 240, 0.26);
+        backdrop-filter: blur(5px);
+        width: 85%;
+        height: fit-content;
+        position: relative;
+        top: 25px;
+        border-radius: 10%;
+    }
+        @keyframes bio-img-animation {
+            50% {
+                border-color: rgba(74, 74, 173, 0.849);
+            }
+        }
+        #bio-img{
+            width: 30%;
+            border-radius: 50% 50%;
+            border:solid 2px;
+            animation: bio-img-animation .5s infinite;
+            margin: 2%;
+        }
+        .bio-name{
+            padding: 1px;
+            width: fit-content;
+            position: relative;
+            left: 32.5%;
+            height:min-content;
+            bottom: 100px;
+        }
+        #name {
+            font-size: calc(.9rem + .9vw);
+            position: relative;
+            bottom: 20px;
         }
         .social-media{
             width: 70%;
@@ -244,6 +461,7 @@
             #linkedin{
                 width: 5.3vh;
             }
+
         .social-media-2{
             width: 70%;
             height: min-content;
@@ -282,6 +500,18 @@
             #youtube{
                 width: 5vh;
             }
+        #section-label-1{
+            position: relative;
+            left: 20%;
+        }
+        #section-label-2{
+            position: relative;
+            left: 30%;
+        }
+        #section-label-3{
+            position: relative;
+            left: 25%;
+        }
         .content{
             width: 90%;
             height: fit-content;
@@ -296,17 +526,40 @@
         }
         #skill-title{
             font-weight:bolder; 
-            font-size:1.9vh; 
+            font-size:2.5vh; 
             text-align:center;
             width: 100%;
         }
+        li {
+            font-size: 1.5vh;
+        }
+        .category{
+            font-weight: bold;
+        }
+        #resume-pdf{
+            position: relative;
+            top: 25px;
+            font-size:2vh;
+        }
+        .projects{
+            font-size: 2.15vh;
+        }
 
-
-    
-    .git-clone{
-        display: none;
+        .git-clone{
+            display: none;
+        }
     }
 
+
+
+
+
+
+
+
+/* Landscape phones */
+@media only screen and (min-width:481px){
+    
     }
 
 
@@ -317,152 +570,7 @@
 
 /* mobile landscape / tablet portrait */
 @media only screen and (max-width:768px){
-    .wrapper{
-        display: flex;
-        justify-content: center;
-    }
-    .profile-card {
-        justify-content: center;
-        background-color: rgba(240, 240, 240, 0.26);
-        backdrop-filter: blur(5px);
-        width: 85%;
-        height: fit-content;
-        position: relative;
-        top: 25px;
-        border-radius: 10%;
-    }
-        @keyframes bio-img-animation {
-            50% {
-                border-color: rgba(74, 74, 173, 0.849);
-            }
-        }
-        #bio-img{
-            width: 30%;
-            border-radius: 50% 50%;
-            border:solid 2px;
-            animation: bio-img-animation 1s infinite;
-            margin: 2%;
-        }
-        .bio-name{
-            padding: 1px;
-            width: fit-content;
-            position: relative;
-            left: 32.5%;
-            height:min-content;
-            bottom: 120px;
-        }
-        #name {
-            font-size: calc(1rem + .1vw);
-        }
-        .social-media{
-            width: 70%;
-            height: min-content;
-            position: relative;
-            left: 30%;
-            bottom: 120px;
-        }
-        .link{
-            width: min-content;
-            height: min-content;
-            position: relative;
-            left: 4%;
-            position: absolute;
-        }
-            #gmail{
-                width: 8.5vh;
-            }
-        .link-2{
-            width: min-content;
-            height: min-content;
-            position: relative;
-            left: 30%;
-            position: absolute;
-        }
-            #whatsapp{
-                width: 5vh;
-            }
-        .link-3{
-            width: min-content;
-            height: min-content;
-            position: relative;
-            left: 50%;
-            position: absolute;
-        }
-            #github{
-                width: 5.5vh;
-            }
-        .link-4{
-            width: min-content;
-            height: min-content;
-            position: relative;
-            left: 72%;
-            position: absolute;
-        }
-            #linkedin{
-                width: 5.3vh;
-            }
-        .social-media-2{
-            width: 70%;
-            height: min-content;
-            position: relative;
-            left: 30%;
-            bottom: 75px;
-        }
-            .link-5{
-                width: min-content;
-                height: min-content;
-                position: relative;
-                left: 20%;
-                position: absolute;
-            }
-            #ig{
-                width: 5vh;
-            }
-            .link-6{
-                width: min-content;
-                height: min-content;
-                position: relative;
-                left: 40%;
-                position: absolute;
-            }
-            #upwork{
-                width: 5vh;
-                border-radius: 50%;
-            }
-            .link-7{
-                width: min-content;
-                height: min-content;
-                position: relative;
-                left: 60%;
-                position: absolute;
-            }
-            #youtube{
-                width: 5vh;
-            }
-        .content{
-            width: 90%;
-            height: fit-content;
-            position: relative;
-            left: 5%;
-            bottom: 20px;
-        }
-        h3 {
-            position: relative;
-            top: 5px;
-            font-family: cursive;
-        }
-        #skill-title{
-            font-weight:bolder; 
-            font-size:1.9vh; 
-            text-align:center;
-            width: 100%;
-        }
-
-
-
-        .git-clone{
-            display: none;
-        }
+    
 
 }
 

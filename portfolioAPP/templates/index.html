@@ -16,7 +16,7 @@
     <script>
         function myFunction() {
             var element = document.body;
- element.classList.toggle("dark-mode");
+            element.classList.toggle("dark-mode");
         }
         </script>
     <style>
@@ -102,20 +102,24 @@
                     <div class="accordion-item">
                         <h2 class="accordion-header" id="flush-headingOne">
                             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
-                                <h3>About Me</h3>
+                                <h3 id="section-label-1">About Me</h3>
                             </button>
                         </h2>
                     <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
                         <div class="accordion-body">
-                            <p>Hello I am recent gradute of the Coding Dojo in Bellevue, Wa.</p>
-                            <p>There I accuquired a certification in Python for Web Developement</p>
+                            <p>Hello I am recent gradute of the Coding Dojo in Bellevue, Wa. In my time there I accuquired a full stack certification in Python for Web Developement.</p>
+                            <p>I have the ability to create Web Applictions using Python's Django 2.2 framework and deploy them on AWS EC2 Virtual Machine's using Linux 20.04LTS servers. I consider myself to be creative and attentive to detail, reason why have been able to enjoy CSS as a Front-End language and naturally dive into some of the CSS frameworks.</p>
+                            <p>I also have a fair comprehension of JavaScript as well as the JQuery library. I can also say that I feel confident in my relational database building and mainting using MySQL and it's workbench. As for version control, I am proeficient in Git Hub and the Git Bash Shell.</p>
+                            <p>I also feel confident using Windows OS, MacOS and my favorite the Linux Ubuntu OS. I personally enjoy being able to use any computer that's handed to me and begin to work. This was a skill that was proven usefull when it came to group work while at school. It became easy for me to aide my class mates and advance with our projects with ease.</p>
+                            <p>As for my future, I will start a second bootcamp at the University of Washington on January 2021. There I intend to get a second full stack certification but this time JavaScript. There I hope to master React and MongoDb in their MERN stack.</p>
+                            <p> &#9996; </p>
                         </div>
                         </div>
                     </div>
                     <div class="accordion-item">
                         <h2 class="accordion-header" id="flush-headingTwo">
                             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
-                                <h3>Skills</h3>
+                                <h3 id="section-label-2">Skills</h3>
                             </button>
                         </h2>
                         <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
@@ -123,13 +127,13 @@
                                 <h6 id="skill-title"">Full Stack Python Web Developer</h4>
                                     <div class="list-1">
                                         <ul>
-                                            <li>FRONT-END</li>
+                                            <li class="category">FRONT-END</li>
                                                 <ul>
                                                     <li>HTML5</li>
                                                     <li>CSS</li>
                                                         <ul>
                                                             <li>BootStrap</li>
-                                                            <li>PureCSS</li>
+                                                            <li>Pure CSS</li>
                                                             <li>Animate CSS</li>
                                                         </ul>
                                                     <li>JavaScript</li>
@@ -137,15 +141,15 @@
                                                             <li>JQuery</li>
                                                         </ul>
                                                 </ul>
-                                            <li>BACK-END</li>
+                                            <li class="category">BACK-END</li>
                                                 <ul>
                                                     <li>Python3</li>
                                                         <ul>
                                                             <li>Django 2.2 + ORM</li>
-                                                            <li>Flask 2.2 + MySQL</li>
+                                                            <!-- <li>Flask 2.2 + MySQL</li> -->
                                                         </ul>
                                                 </ul>
-                                            <li>DATABASE MANAGEMENT</li>
+                                            <li class="category">DATABASE MANAGEMENT</li>
                                                 <ul>
                                                     <li>Relational</li>
                                                         <ul>
@@ -156,18 +160,18 @@
                                     </div>
                                     <div class="list-2">
                                         <ul>
-                                            <li>VERSION CONTROL</li>
+                                            <li class="category" >VERSION CONTROL</li>
                                                 <ul>
-                                                    <li>GitHub</li>
+                                                    <li>Git Hub</li>
                                                 </ul>
-                                            <li>DEPLOYMENT</li>
+                                            <li class="category">DEPLOYMENT</li>
                                                 <ul>
-                                                    <li>AWS EC2 Server</li>
+                                                    <li>AWS EC2 Virtual Machine</li>
                                                         <ul>
                                                             <li>Ubuntu 20.04LTS</li>
                                                         </ul>
                                                 </ul>
-                                            <li>OS / SHELLS</li>
+                                            <li class="category" >OS / SHELLS</li>
                                                 <ul>
                                                     <li>Linux</li>
                                                         <ul>
@@ -180,22 +184,22 @@
                                                         </ul>
                                                     <li>Windows</li>
                                                 </ul>
-                                            <p><a href="{% static 'Resume.pdf' %}" download>DOWNLOAD FULL RESUME</a></p>
+                                            <p><a id="resume-pdf" href="{% static 'Resume.pdf' %}" download>DOWNLOAD FULL RESUME</a></p>
                                         </ul>
                                     </div>
                             </div>
-                    </div>
+                    </div>`
                     </div>
                     <div class="accordion-item">
                         <h2 class="accordion-header" id="flush-headingThree">
                             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
-                                <h3>Projects</h3>
+                                <h3 id="section-label-3">Projects</h3>
                             </button>
                         </h2>
                         <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
                             <div class="accordion-body">
                                 <ul>
-                                    <li><a href="https://github.com/carlitos-206/first-app.git" target="_blank">Terminal App Using Python</a></li>
+                                    <li><a class="projects" href="https://github.com/carlitos-206/first-app.git" target="_blank">Terminal App Using Python</a></li>
                                         <ul>
                                             <li class="git-clone">$ git clone 'https://github.com/carlitos-206/first-app.git'</li>
                                         </ul>
