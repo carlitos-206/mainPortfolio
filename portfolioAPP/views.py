@@ -78,6 +78,7 @@ def index(request):
     print(f"Touch Capabilities: {user_agent.is_touch_capable}")
     print(f"Bot Request: {user_agent.is_bot}")
     if user_agent.is_bot == True:
+        print("THE MITCHELLS GOT ME")
         return HttpResponse("NO BOTS")
     print("\n#### REQUEST COUNT and DEVICE COUNT #####\n")
     print(f"Total Request: Mobile - {mobile}, Tablet - {tablet}, Monitor - {monitor}\n")
