@@ -29,7 +29,7 @@ import socket
 
 
 
-#THESE ARE GLOBAL VARIABLES TO KEEP TRACK OF DEVICE COUNT SO IT DOESN'T EARSE WHEN THE FUNCTION ENDS
+#THESE ARE GLOBAL VARIABLES TO KEEP TRACK OF DEVICE COUNT SO IT DOESN'T EARSE WHEN THE USER REFRESHES THE PAGE 
 mobile = 0 
 tablet = 0
 monitor = 0
@@ -73,13 +73,17 @@ def index(request):
     ua_string = str(user_info)
     user_agent = parse(ua_string)
     print(f"OS: {user_agent.os.family}")
-    print(f"Browser: {user_agent.browser.family} V{user_agent.browser.version_string}")
+    print(f"Browser: {user_agent.browser.family} v{user_agent.browser.version_string}")
     print(f"Device Type: {user_agent.device.family}")
     print(f"Touch Capabilities: {user_agent.is_touch_capable}")
     print(f"Bot Request: {user_agent.is_bot}")
     if user_agent.is_bot == True:
         print("THE MITCHELLS GOT ME")
         return HttpResponse("NO BOTS")
+
+#THIS SHOWS THE REQUEST NUMBER GIVING THEM ONE MORE UNIQUE ID 
+    ticket=mobile+tablet+monitor
+    print(f"Ticket #{ticket}")
     print("\n#### REQUEST COUNT and DEVICE COUNT #####\n")
     print(f"Total Request: Mobile - {mobile}, Tablet - {tablet}, Monitor - {monitor}\n")
     print("#######################################################################\n")
