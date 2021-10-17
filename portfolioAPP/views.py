@@ -29,7 +29,7 @@ import socket
 
 
 
-#THESE ARE GLOBAL VARIABLES TO KEEP TRACK OF DEVICE COUNT SO IT DOESN'T EARSE WHEN THE FUNCTION ENDS
+#THESE ARE GLOBAL VARIABLES TO KEEP TRACK OF DEVICE COUNT SO IT DOESN'T EARSE WHEN THE USER REFRESHES THE PAGE 
 mobile = 0 
 tablet = 0
 monitor = 0
@@ -43,19 +43,19 @@ def index(request):
     print(f"Device Name: {device}")
 
 #THIS LOOPS THROUGH ALL POTENTIAL SCREEN TYPE BY RETURNING DIMENSIONS OF A SCREEN USING THE screeninfo PACKAGE
-    for m in get_monitors():
-        if m.width < 768:
-            global mobile
-            mobile+=1
-            print(f"Screen Type - Mobile: {m.width} X {m.height}")
-        elif 768 < m.width < 1024:
-            global tablet
-            tablet+=1
-            print(f"Screen Type - Tablet: {m.width} X {m.height}")
-        elif m.width>1024:
-            global monitor
-            monitor+=1
-            print(f"Screen Type - Monitor: {m.width} X {m.height}")
+    # for m in get_monitors():
+    #     if m.width < 768:
+    #         global mobile
+    #         mobile+=1
+    #         print(f"Screen Type - Mobile: {m.width} X {m.height}")
+    #     elif 768 < m.width < 1024:
+    #         global tablet
+    #         tablet+=1
+    #         print(f"Screen Type - Tablet: {m.width} X {m.height}")
+    #     elif m.width>1024:
+    #         global monitor
+    #         monitor+=1
+    #         print(f"Screen Type - Monitor: {m.width} X {m.height}")
 
 #THIS IS DJANGO 2.2 INBUILT FUNCTION. THIS ALLOWS TO RETRIVE THE IP ADDRESS MAKING THE REQUEST
     address=request.META.get("REMOTE_ADDR")
@@ -73,12 +73,28 @@ def index(request):
     ua_string = str(user_info)
     user_agent = parse(ua_string)
     print(f"OS: {user_agent.os.family}")
-    print(f"Browser: {user_agent.browser.family} V{user_agent.browser.version_string}")
-    print(f"Device Type: {user_agent.device.family}")
+    print(f"Browser: {user_agent.browser.family} v{user_agent.browser.version_string}")
+    print(f"Device: {user_agent.device.family}")
+    if user_agent.is_mobile == True:
+        print(f"Type: Mobile")
+        global mobile
+        mobile+=1
+    if user_agent.is_tablet == True:
+        print(f"Type: Tablet")
+        global tablet
+        tablet+=1
+    if user_agent.is_pc == True:
+        print(f"Type: Monitor")
+        global monitor
+        monitor+=1
     print(f"Touch Capabilities: {user_agent.is_touch_capable}")
     print(f"Bot Request: {user_agent.is_bot}")
     if user_agent.is_bot == True:
+        print("THE MITCHELLS GOT ME")
         return HttpResponse("NO BOTS")
+#THIS SHOWS THE REQUEST NUMBER GIVING THEM ONE MORE UNIQUE ID 
+    ticket=mobile+tablet+monitor
+    print(f"Ticket #{ticket}")
     print("\n#### REQUEST COUNT and DEVICE COUNT #####\n")
     print(f"Total Request: Mobile - {mobile}, Tablet - {tablet}, Monitor - {monitor}\n")
     print("#######################################################################\n")
