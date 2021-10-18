@@ -174,6 +174,30 @@
         li {
             font-size: 2vh;
         }
+        .gifs{
+            height: 25vh;
+        }
+        #yellow-gif{
+            position: relative;
+            bottom: 495px;
+            right: 35%;
+            width: 55%;
+        }
+        #fish-gif{
+            width: 90%;
+            position: relative;
+            left: 10%;
+            bottom: 155px;
+            z-index: +1;
+        }
+        #floor-sign{
+            width: 40%;
+            position: relative;
+            bottom: 265px;
+        }
+        #flush-collapseTwo{
+            height: 130vh;
+        }
         #button-2{
             position: relative;
             bottom: 15px;
@@ -188,12 +212,26 @@
         #resume-pdf{
             font-size:2vh;
         }
+        #make-top{
+            position: relative;
+            bottom: 210px;
+            left: 20%;
+            z-index: +2;
+        }
         .projects{
             font-size: 2.4vh;
         }
 
         .git-clone{
             display: none;
+        }
+        .game{
+            position: relative;
+            bottom: 250px;
+        }
+        .splatter{
+            width: 10%;
+            display: inline;
         }
 
 }
@@ -375,6 +413,31 @@
         }
         li {
             font-size: 1.9vh;
+        }
+        .gifs{
+            height: 25vh;
+        }
+        #yellow-gif{
+            position: relative;
+            bottom: 495px;
+            right: 35%;
+            width: 55%;
+        }
+        #fish-gif{
+            width: 90%;
+            position: relative;
+            left: 10%;
+            bottom: 155px;
+            z-index: +1;
+        }
+        #floor-sign{
+            width: 40%;
+            position: relative;
+            bottom: 265px;
+        }
+        
+        #flush-collapseTwo{
+            height: 110vh;
         }
         .category{
             font-weight: bold;
@@ -578,14 +641,39 @@
             position: relative;
             left: 5%;
         }
+        .gifs{
+            height: 25vh;
+        }
+        #yellow-gif{
+            position: relative;
+            bottom: 1050px;
+            left: 50%;
+            width: 55%;
+        }
+        #fish-gif{
+            width: 45%;
+            position: relative;
+            left: 60%;
+            bottom: 576px;
+            z-index: +1;
+        }
+        #floor-sign{
+            width: 20%;
+            position: relative;
+            bottom: 553px;
+        }
+        
+        #flush-collapseTwo{
+            height: 115vh;
+        }
         .category{
             font-weight: bold;
         }
         #resume-pdf{
             position: relative;
-            left: 10%;
-            top: 25px;
-            font-size:3vh;
+            left: 3%;
+            bottom: 30px;
+            font-size:3.5vh;
         }
         .projects{
             font-size: 2.15vh;
@@ -597,13 +685,444 @@
 
 }
 
+
+
+
+
 /* tablet landscape */ 
 @media only screen and (min-width:1024px){
-    
+    .wrapper{
+        display: flex;
+        justify-content: center;
+    }
+    .profile-card {
+        justify-content: center;
+        background-color: rgba(255, 255, 255, 0.467);
+        backdrop-filter: blur(7px);
+        width: 65%;
+        height: fit-content;
+        position: relative;
+        top: 25px;
+        border-radius: 10%;
+    }
+        @keyframes bio-img-animation {
+            50% {
+                border-color: rgba(74, 74, 173, 0.849);
+            }
+        }
+        #bio-img{
+            width: 30%;
+            border-radius: 50% 50%;
+            border:solid 2px;
+            animation: bio-img-animation .5s infinite;
+            margin: 2%;
+        }
+        .bio-name{
+            padding: 1px;
+            width: fit-content;
+            position: relative;
+            left: 32.5%;
+            height:min-content;
+            bottom: 100px;
+        }
+        #name {
+            font-size: calc(2rem + .8vw);
+            position: relative;
+            bottom: 100px;
+        }
+        .social-media{
+            width: 70%;
+            height: min-content;
+            position: relative;
+            left: 30%;
+            bottom: 180px;
+        }
+        .link{
+            width: min-content;
+            height: min-content;
+            position: relative;
+            left: 4%;
+            position: absolute;
+        }
+            #gmail{
+                width: 15.5vh;
+            }
+        .link-2{
+            width: min-content;
+            height: min-content;
+            position: relative;
+            left: 31.5%;
+            position: absolute;
+        }
+            #whatsapp{
+                width: 8.5vh;
+            }
+        .link-3{
+            width: min-content;
+            height: min-content;
+            position: relative;
+            left: 50%;
+            position: absolute;
+        }
+            #github{
+                width: 9vh;
+            }
+        .link-4{
+            width: min-content;
+            height: min-content;
+            position: relative;
+            left: 72%;
+            position: absolute;
+        }
+            #linkedin{
+                width: 9.3vh;
+            }
+
+        .social-media-2{
+            width: 70%;
+            height: min-content;
+            position: relative;
+            left: 30%;
+            bottom: 99px;
+        }
+            .link-5{
+                width: min-content;
+                height: min-content;
+                position: relative;
+                left: 20%;
+                position: absolute;
+            }
+            #ig{
+                width: 9vh;
+            }
+            .link-6{
+                width: min-content;
+                height: min-content;
+                position: relative;
+                left: 40%;
+                position: absolute;
+            }
+            #upwork{
+                width: 9vh;
+                border-radius: 50%;
+            }
+            .link-7{
+                width: min-content;
+                height: min-content;
+                position: relative;
+                left: 58%;
+                top: -15px;
+                position: absolute;
+            }
+            #youtube{
+                width: 12vh;
+            }
+        #section-label-1{
+            position: relative;
+            left: 30%;
+            font-size: 6vh;
+        }
+        #section-label-2{
+            position: relative;
+            left: 35%;
+            font-size: 6vh;
+        }
+        #section-label-3{
+            position: relative;
+            left: 30%;
+            font-size: 6vh;
+        }
+        #p-emoji{
+            display: flex;
+            justify-content: center;
+            font-size: 45px;
+            height: min-content;
+        }
+        .content{
+            width: 90%;
+            height: fit-content;
+            position: relative;
+            left: 5%;
+            bottom: 20px;
+        }
+        h3 {
+            position: relative;
+            top: 5px;
+            font-family: 'Times New Roman', Times, serif;
+        }
+        #skill-title{
+            font-weight:bolder; 
+            font-size: calc(2rem + 1vw); 
+            text-align:center;
+            width: 100%;
+            height: min-content;
+        }
+        li {
+            font-size:3vh;
+            position: relative;
+            left: 5%;
+        }
+        .gifs{
+            height: 25vh;
+        }
+        #yellow-gif{
+            position: relative;
+            bottom: 850px;
+            left: 50%;
+            width: 55%;
+        }
+        #fish-gif{
+            width: 45%;
+            position: relative;
+            left: 60%;
+            bottom: 576px;
+            z-index: +1;
+        }
+        #floor-sign{
+            width: 20%;
+            position: relative;
+            bottom: 553px;
+        }
+        
+        #flush-collapseTwo{
+            height: 140vh;
+        }
+        .category{
+            font-weight: bold;
+        }
+        #resume-pdf{
+            position: relative;
+            left: 3%;
+            bottom: 30px;
+            font-size:3.5vh;
+        }
+        .projects{
+            font-size: 4vh;
+        }
+        .git-clone{
+            display: none;
+        }
 }
 
+/*Small Monitor Screen */
+@media only screen and (min-width:1280px){
+    .wrapper{
+        display: flex;
+        justify-content: center;
+    }
+    .profile-card {
+        justify-content: center;
+        background-color: rgba(255, 255, 255, 0.467);
+        backdrop-filter: blur(7px);
+        width: 55%;
+        height: fit-content;
+        position: relative;
+        top: 25px;
+        border-radius: 10%;
+    }
+        @keyframes bio-img-animation {
+            50% {
+                border-color: rgba(74, 74, 173, 0.849);
+            }
+        }
+        #bio-img{
+            width: 30%;
+            border-radius: 50% 50%;
+            border:solid 2px;
+            animation: bio-img-animation .5s infinite;
+            margin: 2%;
+        }
+        .bio-name{
+            padding: 1px;
+            width: fit-content;
+            position: relative;
+            left: 32.5%;
+            height:min-content;
+            bottom: 100px;
+        }
+        #name {
+            font-size: calc(2rem + .8vw);
+            position: relative;
+            bottom: 100px;
+        }
+        .social-media{
+            width: 70%;
+            height: min-content;
+            position: relative;
+            left: 30%;
+            bottom: 200px;
+        }
+        .link{
+            width: min-content;
+            height: min-content;
+            position: relative;
+            left: 4%;
+            position: absolute;
+        }
+            #gmail{
+                width: 18.5vh;
+            }
+        .link-2{
+            width: min-content;
+            height: min-content;
+            position: relative;
+            left: 31.5%;
+            position: absolute;
+        }
+            #whatsapp{
+                width: 11.5vh;
+            }
+        .link-3{
+            width: min-content;
+            height: min-content;
+            position: relative;
+            left: 50%;
+            position: absolute;
+        }
+            #github{
+                width: 12vh;
+            }
+        .link-4{
+            width: min-content;
+            height: min-content;
+            position: relative;
+            left: 72%;
+            position: absolute;
+        }
+            #linkedin{
+                width: 12.3vh;
+            }
 
-/* Monitor Screen*/
+        .social-media-2{
+            width: 70%;
+            height: min-content;
+            position: relative;
+            left: 30%;
+            bottom: 111px;
+        }
+            .link-5{
+                width: min-content;
+                height: min-content;
+                position: relative;
+                left: 20%;
+                position: absolute;
+            }
+            #ig{
+                width: 12vh;
+            }
+            .link-6{
+                width: min-content;
+                height: min-content;
+                position: relative;
+                left: 40%;
+                position: absolute;
+            }
+            #upwork{
+                width: 12vh;
+                border-radius: 50%;
+            }
+            .link-7{
+                width: min-content;
+                height: min-content;
+                position: relative;
+                left: 58%;
+                top: -15px;
+                position: absolute;
+            }
+            #youtube{
+                width: 16vh;
+            }
+        #section-label-1{
+            position: relative;
+            left: 30%;
+            font-size: 6vh;
+        }
+        #section-label-2{
+            position: relative;
+            left: 35%;
+            font-size: 6vh;
+        }
+        #section-label-3{
+            position: relative;
+            left: 30%;
+            font-size: 6vh;
+        }
+        #p-emoji{
+            display: flex;
+            justify-content: center;
+            font-size: 45px;
+            height: min-content;
+        }
+        .content{
+            width: 90%;
+            height: fit-content;
+            position: relative;
+            left: 5%;
+            bottom: 20px;
+        }
+        h3 {
+            position: relative;
+            top: 5px;
+            font-family: 'Times New Roman', Times, serif;
+        }
+        #skill-title{
+            font-weight:bolder; 
+            font-size: calc(2rem + 1vw); 
+            text-align:center;
+            width: 100%;
+            height: min-content;
+        }
+        li {
+            font-size:3vh;
+            position: relative;
+            left: 5%;
+        }
+        .gifs{
+            height: 25vh;
+        }
+        #yellow-gif{
+            position: relative;
+            bottom: 850px;
+            left: 50%;
+            width: 55%;
+        }
+        #fish-gif{
+            width: 45%;
+            position: relative;
+            left: 60%;
+            bottom: 576px;
+            z-index: +1;
+        }
+        #floor-sign{
+            width: 20%;
+            position: relative;
+            bottom: 553px;
+        }
+        
+        #flush-collapseTwo{
+            height: 140vh;
+        }
+        .category{
+            font-weight: bold;
+        }
+        #resume-pdf{
+            position: relative;
+            left: 3%;
+            bottom: 30px;
+            font-size:3.5vh;
+        }
+        #make-top{
+            position: absolute
+        }
+        .projects{
+            font-size: 4vh;
+        }
+        .git-clone{
+            display: none;
+        }
+}
+
+/* Medium Monitor Screen*/
 
 @media only screen and (min-width:1440px){
     

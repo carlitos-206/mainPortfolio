@@ -11,16 +11,24 @@
     <link rel="stylesheet" href="{% static 'css/index.css' %}">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
-<link rel="icon" href="{% static 'img/me_icon.svg' %}">
-<title>Carlitos | Welcome</title>
+    <link rel="icon" href="{% static 'img/me_icon.svg' %}">
+    <title>Carlitos | Welcome</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script>
-        function myFunction() {
-            var element = document.body;
-            element.classList.toggle("dark-mode");
-        }
-        </script>
+        $(document).ready(function(){
+            $("#game-bt").click(function(){
+                    $("#game-bt").hide();
+                });
+            })
+    </script>
+
     <style>
-        
+        #the-game{
+            display: none;
+        }
+        #game-btn{
+            display: block;
+        }
         /* Small Phones like iPhone 5SE */
         @media screen and (max-width:374px) {
             body {
@@ -101,11 +109,11 @@
         /* tablet landscape */ 
         @media only screen and (min-width:1024px){
             body {
-                background: url("{% static 'img/lightMode/tablet-option-2.JPEG' %}") no-repeat left center fixed;
+                background: url("{% static 'img/lightMode/monitor-med-option-2.JPEG' %}") no-repeat left center fixed;
                 background-size: cover;
             }
             .accordion-body {
-                font-size: 3vh;
+                font-size: 4vh;
             }
             .accordion-item {
                 background-color: rgba(255, 255, 255, 0);
@@ -138,7 +146,7 @@
     </style>
 </head>
 <body>
-    <div class="wrapper">
+    <div class="wrapper" id="top">
         <!-- <button onclick="myFunction()">Toggle dark mode</button> -->
         <div class="profile-card">
             <div class="bio-pic">
@@ -193,7 +201,7 @@
                     </div>
                     <div id="item-2" class="accordion-item">
                         <h2 class="accordion-header" id="flush-headingTwo">
-                            <button id="button-2"class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                            <button onClick='window.location="#skill-title"'id="button-2"class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
                                 <h3 id="section-label-2">Skills</h3>
                             </button>
                         </h2>
@@ -203,7 +211,7 @@
                                     <div class="list-1">
                                         <ul>
                                             <li class="category">FRONT-END</li>
-                                                <ul>
+                                            <ul>
                                                     <li>HTML5</li>
                                                     <li>CSS</li>
                                                         <ul>
@@ -230,7 +238,7 @@
                                                         <ul>
                                                             <li>MySQL</li>
                                                         </ul>
-                                                </ul>
+                                                    </ul>
                                         </ul>
                                     </div>
                                     <div class="list-2">
@@ -246,7 +254,7 @@
                                                             <li>Ubuntu 20.04LTS</li>
                                                         </ul>
                                                 </ul>
-                                            <li class="category" >OS / SHELLS</li>
+                                                <li class="category" >OS / SHELLS</li>
                                                 <ul>
                                                     <li>Linux</li>
                                                         <ul>
@@ -262,8 +270,25 @@
                                             <p><a id="resume-pdf" href="{% static 'Resume.pdf' %}" download>DOWNLOAD FULL RESUME</a></p>
                                         </ul>
                                     </div>
+                                    <div class="gif-set-1">
+                                        <img id="yellow-gif" src="{% static 'img/floating-me.gif' %}" alt="">
+                                    </div>
+                                    <div class="gif-set-2">
+                                        <img id="fish-gif"src="{% static 'img/animated-fish-mopping.gif' %}" alt="">
+                                        <img id="floor-sign"src="{% static 'img/wavy-floor.gif' %}" alt="">
+                                    </div>
+                                    <button id="game-btn" onclick={callDouble} >Help Clean</button>
+                                    <div id="the-game" class="game">
+                                        <img class="splatter" id="splat-1" src="{% static 'img/splat-1.png' %}" alt="splat">
+                                        <img class="splatter" id="splat-3" src="{% static 'img/splat-1.png' %}" alt="splat">
+                                        <img class="splatter" id="splat-4" src="{% static 'img/splat-1.png' %}" alt="splat">
+                                        <img class="splatter" id="splat-4" src="{% static 'img/splat-1.png' %}" alt="splat">
+                                        <img class="splatter" id="splat-5" src="{% static 'img/splat-1.png' %}" alt="splat">
+                                        <img class="splatter" id="splat-6" src="{% static 'img/splat-1.png' %}" alt="splat">    
+                                        <img class="splatter" id="splat-7" src="{% static 'img/splat-1.png' %}" alt="splat">
+                                    </div>
+                                </div>
                             </div>
-                    </div>
                     </div>
                     <div id="item-3" class="accordion-item">
                         <h2 class="accordion-header" id="flush-headingThree">
@@ -279,7 +304,7 @@
                                             <li class="git-clone">$ git clone 'https://github.com/carlitos-206/useragent-Django2.2.git'</li>
                                         </ul>
                                     <li><a class="projects" href="https://github.com/carlitos-206/first-app.git" target="_blank">Terminal App Using Python</a></li>
-                                        <ul>
+                                    <ul>
                                             <li class="git-clone">$ git clone 'https://github.com/carlitos-206/first-app.git'</li>
                                         </ul>
                                 </ul>
@@ -292,4 +317,26 @@
         </div>
     </div>
 </body>
+<script>
+    const callDouble = () =>{
+        showGame();
+        hideStartBtn();
+    } 
+    function showGame() {
+        var game = document.getElementById("the-game");
+        if (game.style.display === "none") {
+            game.style.display = "block";
+        } else {
+            game.style.display = "none";
+        }
+    }
+    function hideStartBtn() {
+        var killBtn = document.getElementById("game-btn");
+        if (killBtn.style.display === "block") {
+            killBtn.style.display = "none";
+        } else {
+            killBtn.style.display = "block";
+        }
+    }
+</script> 
 </html>
