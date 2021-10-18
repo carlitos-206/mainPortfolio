@@ -1,34 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    {%load static%}
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="This is the portfolio for Carlos R. Caceres Martinez, a gradute from the Coding Dojo in Bellevue and a future student at UW">
-    <meta name="keywords" content="Portfolio, Django, Python, MySQL, CSS, BootStrap, PureCSS, VanillaCSS, JS, JQuery, AWS, Ubuntu, Unix, MacOS, Windows">
-    <meta name="author" content="Carlos R. Caceres Martinez">
-    <link rel="stylesheet" href="{% static 'css/index.css' %}">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
-    <link rel="icon" href="{% static 'img/me_icon.svg' %}">
-    <title>Carlitos | Welcome</title>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script>
-        $(document).ready(function(){
-            $("#game-bt").click(function(){
-                    $("#game-bt").hide();
-                });
-            })
-    </script>
-
+    <head>
+        {%load static%}
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="This is the portfolio for Carlos R. Caceres Martinez, a gradute from the Coding Dojo in Bellevue and a future student at UW">
+        <meta name="keywords" content="Portfolio, Django, Python, MySQL, CSS, BootStrap, PureCSS, VanillaCSS, JS, JQuery, AWS, Ubuntu, Unix, MacOS, Windows">
+        <meta name="author" content="Carlos R. Caceres Martinez">
+        <link rel="stylesheet" href="{% static 'css/index.css' %}">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+        <link rel="icon" href="{% static 'img/me_icon.svg' %}">
+        <title>Carlitos | Welcome</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="{% static 'js/jquery.js' %}"></script>
+        <script src="{% static 'js/vanilla.js' %}"></script>
     <style>
-        #the-game{
-            display: none;
-        }
-        #game-btn{
-            display: block;
-        }
         /* Small Phones like iPhone 5SE */
         @media screen and (max-width:374px) {
             body {
@@ -47,6 +35,64 @@
             }
             .accordion-flush .accordion-item {
                 border-style: none;
+            }
+
+            #the-game{
+                display: none;
+            }
+            #game-btn{
+                display: block;
+                position: relative;
+                bottom: 258px;
+                border-radius: 0%;
+                width: fit-content;
+                padding: 2%;
+                font-size: 2vh;
+                left: 58%;
+            }
+            #kill-1, #kill-2, #kill-3, #kill-4, #kill-5, #kill-6, #kill-7{
+                display: block;
+                width: calc(2rem + 1vw);
+                background-color: rgba(240, 248, 255, 0);
+                border-style: none;
+            }
+            .splatter{
+                width: 100%;
+            }
+            #kill-1{
+                position: relative;
+                bottom: 25px;
+                right: 10%;
+            }
+            #kill-2{
+                position: relative;
+                bottom: 40px;
+                left:15%
+            }
+            #kill-3{
+                position: relative;
+                bottom: 73px;
+                left:49%
+            }
+            #kill-4{
+                position: relative;
+                bottom: 110px;
+                left:33%
+            }
+            #kill-5{
+                position: relative;
+                bottom: 156px;
+                left:63%
+            }
+            #kill-6{
+                position: relative;
+                bottom: 176px;
+                left:69%
+            }
+            #kill-7{
+                position: relative;
+                bottom: 234px;
+                left:80%
             }
         }
         
@@ -201,7 +247,7 @@
                     </div>
                     <div id="item-2" class="accordion-item">
                         <h2 class="accordion-header" id="flush-headingTwo">
-                            <button onClick='window.location="#skill-title"'id="button-2"class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                            <button id="button-2"class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
                                 <h3 id="section-label-2">Skills</h3>
                             </button>
                         </h2>
@@ -277,15 +323,15 @@
                                         <img id="fish-gif"src="{% static 'img/animated-fish-mopping.gif' %}" alt="">
                                         <img id="floor-sign"src="{% static 'img/wavy-floor.gif' %}" alt="">
                                     </div>
-                                    <button id="game-btn" onclick={callDouble} >Help Clean</button>
+                                    <button id="game-btn" onclick="hideStartBtn(), showGame(), gameOver()" >Double Tap to Clean</button>
                                     <div id="the-game" class="game">
-                                        <img class="splatter" id="splat-1" src="{% static 'img/splat-1.png' %}" alt="splat">
-                                        <img class="splatter" id="splat-3" src="{% static 'img/splat-1.png' %}" alt="splat">
-                                        <img class="splatter" id="splat-4" src="{% static 'img/splat-1.png' %}" alt="splat">
-                                        <img class="splatter" id="splat-4" src="{% static 'img/splat-1.png' %}" alt="splat">
-                                        <img class="splatter" id="splat-5" src="{% static 'img/splat-1.png' %}" alt="splat">
-                                        <img class="splatter" id="splat-6" src="{% static 'img/splat-1.png' %}" alt="splat">    
-                                        <img class="splatter" id="splat-7" src="{% static 'img/splat-1.png' %}" alt="splat">
+                                        <button class="kill-btn" id="kill-1" onclick="kill_1()" ><img class="splatter" id="splat-1" src="{% static 'img/splat-1.png' %}" alt="splat"></button>
+                                        <button class="kill-btn" id="kill-2" onclick="kill_2()" ><img class="splatter" id="splat-2" src="{% static 'img/splat-1.png' %}" alt="splat"></button>
+                                        <button class="kill-btn" id="kill-3" onclick="kill_3()" ><img class="splatter" id="splat-3" src="{% static 'img/splat-1.png' %}" alt="splat"></button>
+                                        <button class="kill-btn" id="kill-4" onclick="kill_4()" ><img class="splatter" id="splat-4" src="{% static 'img/splat-1.png' %}" alt="splat"></button>
+                                        <button class="kill-btn" id="kill-5" onclick="kill_5()" ><img class="splatter" id="splat-5" src="{% static 'img/splat-1.png' %}" alt="splat"></button>
+                                        <button class="kill-btn" id="kill-6" onclick="kill_6()" ><img class="splatter" id="splat-6" src="{% static 'img/splat-1.png' %}" alt="splat"></button>
+                                        <button class="kill-btn" id="kill-7" onclick="kill_7()" ><img class="splatter" id="splat-7" src="{% static 'img/splat-1.png' %}" alt="splat"></button>
                                     </div>
                                 </div>
                             </div>
@@ -317,26 +363,4 @@
         </div>
     </div>
 </body>
-<script>
-    const callDouble = () =>{
-        showGame();
-        hideStartBtn();
-    } 
-    function showGame() {
-        var game = document.getElementById("the-game");
-        if (game.style.display === "none") {
-            game.style.display = "block";
-        } else {
-            game.style.display = "none";
-        }
-    }
-    function hideStartBtn() {
-        var killBtn = document.getElementById("game-btn");
-        if (killBtn.style.display === "block") {
-            killBtn.style.display = "none";
-        } else {
-            killBtn.style.display = "block";
-        }
-    }
-</script> 
 </html>
