@@ -27,3 +27,5 @@ Once those requirements are met in your shell run:
         $ python3 manage.py runserver 
 
 Open your browser to: localhost:8000
+
+THANK YOU
