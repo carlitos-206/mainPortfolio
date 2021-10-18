@@ -1,4 +1,4 @@
-#Welcome to my portfolio's source code
+Welcome to my portfolio's source code
 THIS IS CURRENTLY A WORK IN PROCESS 
 REQUIREMENTS TO RUN IN A LOCAL ENV: 
 Python3.6+
