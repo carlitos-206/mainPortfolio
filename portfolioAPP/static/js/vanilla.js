@@ -14,7 +14,7 @@ function hideStartBtn() {
         StartBtn.style.display = "block";
     }
 }
-var killCount = 0
+var killCount = 0;
 function kill_1() {
     var killBtn = document.getElementById("kill-1")
     if (killBtn.style.display === "block") {
@@ -78,29 +78,30 @@ function kill_6() {
     }
 }
 function gameOver() {
-        var timeLeft = 30;
-        var showTimer = document.getElementById("timer");
+        var timeLeft = 5;
         var timerId = setInterval(countdown, 10000);
+        var killGame = document.getElementById("the-game")
         function endGame(){
-            alert("GAME OVER");
-            var killGame = document.getElementById("the-game")
             if (killGame.style.display === "none"){
                 killGame.style.display = "none";
-                } else {
-                killGame.style.display = "none";
-                }
-            }
-        function countdown() {
-            if (timeLeft == -1 || killCount !==7) {
-            clearTimeout(timerId);
-            endGame();
-        } else {
-            alert("Thanks For Playing");
+            } else {
+                killGame.style.display = "none"
             }
         }
-    }
+        function countdown() {
+            if (timeLeft == 0 || killCount !==7) {
+                clearTimeout(timerId);
+                alert("YOU LOOSE!!!!");
+                return endGame();
+            } else { 
+                clearTimeout(timerId);
+                alert("YOU WON!!!!");
+                return endGame();
+            }
+}
+}
+
 // function play() {
 //     //var audio = new Audio('');
 //     //audio.play();
 // }
-console.log(killCount)
