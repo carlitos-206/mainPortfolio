@@ -1,30 +1,8 @@
 from django.http.response import HttpResponse
 from django.shortcuts import render, HttpResponse, redirect
-
-'''THIS PACKAGE GETS THE SCREEN DIMENSIONS
-    >> pip install screeninfo
-'''
 from screeninfo import get_monitors
-
-''' THIS PACAKGE ALLOWS TO PARSE THE request.headear['User_agent'](see:https://docs.djangoproject.com/en/2.2/ref/request-response/#django.http.HttpRequest.META),
-    
-        MEANING IT WILL GIVE KEYS TO THE VALUES https://pypi.org/project/user-agents/ 
-        >> pip install pyyaml ua-parser user-agents
-'''
 from user_agents import parse
-
-'''THIS PACKAGE ALLOWS TO GEO LOCATE AN IP ADDRESS
-        TO PASS A ACTIVE IP PASS THE 
-        "IP=request.META.get("REMOTE_ADDR")" as an arguement in 
-        response = DbIpCity.get(f"{IP}", api_key='free')
-        response.key
-        https://pypi.org/project/ip2geotools/
-'''
 from ip2geotools.databases.noncommercial import DbIpCity
-
-'''THIS IS A MODULE IN PYTHON3.X TO GET INFORMATION ON THE REQUEST
-
-'''
 import socket
 
 
@@ -98,4 +76,7 @@ def index(request):
     print("\n#### REQUEST COUNT and DEVICE COUNT #####\n")
     print(f"Total Request: Mobile - {mobile}, Tablet - {tablet}, Monitor - {monitor}\n")
     print("#######################################################################\n")
+    
+    
+    # check_ip = address
     return render(request, "index.html")

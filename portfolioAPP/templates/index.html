@@ -21,6 +21,9 @@
         @media screen and (max-width:374px) {
             body {
                 background: url("{% static 'img/lightMode/tablet-option-2.JPEG' %}") no-repeat left center fixed;
+                -webkit-background-size: cover;
+                -moz-background-size: cover;
+                -o-background-size: cover;
                 background-size: cover;
             }
             .accordion-item {
@@ -36,14 +39,13 @@
             .accordion-flush .accordion-item {
                 border-style: none;
             }
-
             #the-game{
                 display: none;
             }
             #game-btn{
                 display: block;
                 position: relative;
-                bottom: 258px;
+                bottom: 280px;
                 border-radius: 0%;
                 width: fit-content;
                 padding: 2%;
@@ -100,6 +102,9 @@
         @media only screen and (min-width:375px) {
             body {
                 background: url("{% static 'img/lightMode/tablet-option-2.JPEG' %}") no-repeat left center fixed;
+                -webkit-background-size: cover;
+                -moz-background-size: cover;
+                -o-background-size: cover;
                 background-size: cover;
             }
             .accordion-item {
@@ -119,13 +124,77 @@
             .accordion-flush .accordion-item {
                 border-style: none;
             }
+            #the-game{
+                display: none;
+                position: relative;
+                bottom: 255px;
+                z-index: +2;
+            }
+            #game-btn{
+                display: block;
+                position: relative;
+                bottom: 290px;
+                border-radius: 0%;
+                width: 62%;
+                padding: 2%;
+                font-size: 2vh;
+                left: 24%;
+                Z-INDEX: +2;
+            }
+            #kill-1, #kill-2, #kill-3, #kill-4, #kill-5, #kill-6, #kill-7{
+                display: block;
+                width: calc(2rem + 1vw);
+                background-color: rgba(240, 248, 255, 0);
+                border-style: none;
+            }
+            .splatter{
+                width: 100%;
+            }
+            #kill-1{
+                position: relative;
+                bottom: 25px;
+                right: 10%;
+            }
+            #kill-2{
+                position: relative;
+                bottom: 40px;
+                left:15%
+            }
+            #kill-3{
+                position: relative;
+                bottom: 73px;
+                left:49%
+            }
+            #kill-4{
+                position: relative;
+                bottom: 110px;
+                left:33%
+            }
+            #kill-5{
+                position: relative;
+                bottom: 156px;
+                left:63%
+            }
+            #kill-6{
+                position: relative;
+                bottom: 176px;
+                left:69%
+            }
+            #kill-7{
+                position: relative;
+                bottom: 234px;
+                left:80%
+            }
         }
         
         /* Mobile - Portrait */
         /* mobile landscape / tablet portrait */
-        @media only screen and (min-width:768px){
+        @media only screen and (min-width:767px){
             body {
                 background: url("{% static 'img/lightMode/tablet-option-2.JPEG' %}") no-repeat left center fixed;
+                -webkit-background-size: cover;
+                -moz-background-size: cover;
+                -o-background-size: cover;
                 background-size: cover;
             }
             .accordion-body {
@@ -150,16 +219,80 @@
                 position: relative;
                 bottom: 10px;
             }
+            #the-game{
+                display: none;
+                position: relative;
+                bottom: 686px;
+                z-index: +3;;
+            }
+            #game-btn{
+                display: block;
+                position: relative;
+                bottom: 850px;
+                border-radius: 0%;
+                width: 36%;
+                padding: 2%;
+                font-size: 2vh;
+                left: 68%;
+                Z-INDEX: +2;
+            }
+            #kill-1, #kill-2, #kill-3, #kill-4, #kill-5, #kill-6, #kill-7{
+                display: block;
+                width: calc(2rem + 1vw);
+                background-color: rgba(240, 248, 255, 0);
+                border-style: none;
+            }
+            .splatter{
+                width: 100%;
+            }
+            #kill-1{
+                position: relative;
+                bottom: 25px;
+                right: 10%;
+            }
+            #kill-2{
+                position: relative;
+                bottom: 40px;
+                left:15%
+            }
+            #kill-3{
+                position: relative;
+                bottom: 73px;
+                left:49%
+            }
+            #kill-4{
+                position: relative;
+                bottom: 110px;
+                left:33%
+            }
+            #kill-5{
+                position: relative;
+                bottom: 156px;
+                left:63%
+            }
+            #kill-6{
+                position: relative;
+                bottom: 176px;
+                left:69%
+            }
+            #kill-7{
+                position: relative;
+                bottom: 234px;
+                left:80%
+            }
         }
 
-        /* tablet landscape */ 
+        /* tablet landscape / small monitor*/ 
         @media only screen and (min-width:1024px){
             body {
-                background: url("{% static 'img/lightMode/monitor-med-option-2.JPEG' %}") no-repeat left center fixed;
+                background: url("{% static 'img/lightMode/monitor-med-option-2.JPEG' %}") no-repeat center fixed;
+                -webkit-background-size: cover;
+                -moz-background-size: cover;
+                -o-background-size: cover;
                 background-size: cover;
             }
             .accordion-body {
-                font-size: 4vh;
+                font-size: 2.3vh;
             }
             .accordion-item {
                 background-color: rgba(255, 255, 255, 0);
@@ -180,14 +313,351 @@
                 position: relative;
                 bottom: 10px;
             }
+            #the-game{
+                display: none;
+                position: relative;
+                bottom: 870px;
+                left: 10%;
+                z-index: +3;
+            }
+            #game-btn{
+                display: block;
+                position: relative;
+                bottom: 1210px;
+                border-radius: 0%;
+                width: 35%;
+                padding: 2%;
+                font-size: 2vh;
+                left: 66%;
+                z-index: +2;
+            }
+            #kill-1, #kill-2, #kill-3, #kill-4, #kill-5, #kill-6, #kill-7{
+                display: block;
+                width: calc(2rem + 1vw);
+                background-color: rgba(240, 248, 255, 0);
+                border-style: none;
+            }
+            .splatter{
+                width: 100%;
+            }
+            #kill-1{
+                position: relative;
+                bottom: 25px;
+                right: 10%;
+            }
+            #kill-2{
+                position: relative;
+                bottom: 40px;
+                left:15%
+            }
+            #kill-3{
+                position: relative;
+                bottom: 73px;
+                left:49%
+            }
+            #kill-4{
+                position: relative;
+                bottom: 110px;
+                left:33%
+            }
+            #kill-5{
+                position: relative;
+                bottom: 156px;
+                left:63%
+            }
+            #kill-6{
+                position: relative;
+                bottom: 176px;
+                left:69%
+            }
+            #kill-7{
+                position: relative;
+                bottom: 234px;
+                left:80%
+            }
         }
-
+        /* small monitor screen */
+        @media only screen and (min-width:1280px){
+            body {
+                background: url("{% static 'img/lightMode/monitor-med-option-2.JPEG' %}") no-repeat center fixed;
+                -webkit-background-size: cover;
+                -moz-background-size: cover;
+                -o-background-size: cover;
+                background-size: cover;
+            }
+            .accordion-body {
+                font-size: 2.3vh;
+            }
+            .accordion-item {
+                background-color: rgba(255, 255, 255, 0);
+            }
+            .accordion-button {
+                background-color: rgba(240, 248, 255, 0);
+                position: relative;
+                border:none;
+                top: 10px;
+            }
+            .accordion-button:not(.collapsed){
+                background-color: rgba(240, 248, 255, 0);
+                position: relative;
+                top: 10px;
+            }
+            .accordion-flush .accordion-item {
+                border-style: none;
+                position: relative;
+                bottom: 10px;
+            }
+            #the-game{
+                display: none;
+                position: relative;
+                bottom: 480px;
+                left: 10%;
+                z-index: +3;
+            }
+            #game-btn{
+                display: block;
+                position: relative;
+                bottom: 515px;
+                border-radius: 0%;
+                width: 49%;
+                padding: 2%;
+                font-size: 2vh;
+                left: 58%;
+                z-index: +2;
+            }
+            #kill-1, #kill-2, #kill-3, #kill-4, #kill-5, #kill-6, #kill-7{
+                display: block;
+                width: calc(2rem + 1vw);
+                background-color: rgba(240, 248, 255, 0);
+                border-style: none;
+            }
+            .splatter{
+                width: 100%;
+            }
+            #kill-1{
+                position: relative;
+                bottom: 25px;
+                right: 10%;
+            }
+            #kill-2{
+                position: relative;
+                bottom: 40px;
+                left:15%
+            }
+            #kill-3{
+                position: relative;
+                bottom: 73px;
+                left:49%
+            }
+            #kill-4{
+                position: relative;
+                bottom: 110px;
+                left:33%
+            }
+            #kill-5{
+                position: relative;
+                bottom: 156px;
+                left:63%
+            }
+            #kill-6{
+                position: relative;
+                bottom: 176px;
+                left:69%
+            }
+            #kill-7{
+                position: relative;
+                bottom: 234px;
+                left:80%
+            }
+        }
         /* Monitor Screen*/
         @media only screen and (min-width:1440px){
+            body {
+                background: url("{% static 'img/lightMode/monitor-large.JPEG' %}") no-repeat center fixed;
+                -webkit-background-size: cover;
+                -moz-background-size: cover;
+                -o-background-size: cover;
+                background-size: cover;
+            }
+            .accordion-body {
+                font-size: 2.3vh;
+            }
+            .accordion-item {
+                background-color: rgba(255, 255, 255, 0);
+            }
+            .accordion-button {
+                background-color: rgba(240, 248, 255, 0);
+                position: relative;
+                border:none;
+                top: 10px;
+            }
+            .accordion-button:not(.collapsed){
+                background-color: rgba(240, 248, 255, 0);
+                position: relative;
+                top: 10px;
+            }
+            .accordion-flush .accordion-item {
+                border-style: none;
+                position: relative;
+                bottom: 10px;
+            }
+            #the-game{
+                display: none;
+                position: relative;
+                bottom: 527px;
+                left: 10%;
+                z-index: +3;
+            }
+            #game-btn{
+                display: block;
+                position: relative;
+                bottom: 572px;
+                border-radius: 0%;
+                width: 49%;
+                padding: 2%;
+                font-size: 2vh;
+                left: 58%;
+                z-index: +2;
+            }
+            #kill-1, #kill-2, #kill-3, #kill-4, #kill-5, #kill-6, #kill-7{
+                display: block;
+                width: calc(2rem + 1vw);
+                background-color: rgba(240, 248, 255, 0);
+                border-style: none;
+            }
+            .splatter{
+                width: 100%;
+            }
+            #kill-1{
+                position: relative;
+                bottom: 25px;
+                right: 10%;
+            }
+            #kill-2{
+                position: relative;
+                bottom: 40px;
+                left:15%
+            }
+            #kill-3{
+                position: relative;
+                bottom: 73px;
+                left:49%
+            }
+            #kill-4{
+                position: relative;
+                bottom: 110px;
+                left:33%
+            }
+            #kill-5{
+                position: relative;
+                bottom: 156px;
+                left:63%
+            }
+            #kill-6{
+                position: relative;
+                bottom: 176px;
+                left:69%
+            }
+            #kill-7{
+                position: relative;
+                bottom: 234px;
+                left:80%
+            }
         }
 
         /* Large Monitors */
         @media only screen and (min-width:1920px){
+            body {
+                background: url("{% static 'img/lightMode/monitor-large.JPEG' %}") no-repeat center fixed;
+                -webkit-background-size: cover;
+                -moz-background-size: cover;
+                -o-background-size: cover;
+                background-size: cover;
+            }
+            .accordion-body {
+                font-size: 2.3vh;
+            }
+            .accordion-item {
+                background-color: rgba(255, 255, 255, 0);
+            }
+            .accordion-button {
+                background-color: rgba(240, 248, 255, 0);
+                position: relative;
+                border:none;
+                top: 10px;
+            }
+            .accordion-button:not(.collapsed){
+                background-color: rgba(240, 248, 255, 0);
+                position: relative;
+                top: 10px;
+            }
+            .accordion-flush .accordion-item {
+                border-style: none;
+                position: relative;
+                bottom: 10px;
+            }
+            #the-game{
+                display: none;
+                position: relative;
+                bottom: 775px;
+                left: 10%;
+                z-index: +3;
+            }
+            #game-btn{
+                display: block;
+                position: relative;
+                bottom: 807px;
+                border-radius: 0%;
+                width: 43%;
+                padding: 2%;
+                font-size: 2vh;
+                left: 58%;
+                z-index: +2;
+            }
+            #kill-1, #kill-2, #kill-3, #kill-4, #kill-5, #kill-6, #kill-7{
+                display: block;
+                width: calc(2rem + 1vw);
+                background-color: rgba(240, 248, 255, 0);
+                border-style: none;
+            }
+            .splatter{
+                width: 100%;
+            }
+            #kill-1{
+                position: relative;
+                bottom: 25px;
+                right: 10%;
+            }
+            #kill-2{
+                position: relative;
+                bottom: 40px;
+                left:15%
+            }
+            #kill-3{
+                position: relative;
+                bottom: 73px;
+                left:49%
+            }
+            #kill-4{
+                position: relative;
+                bottom: 110px;
+                left:33%
+            }
+            #kill-5{
+                position: relative;
+                bottom: 156px;
+                left:63%
+            }
+            #kill-6{
+                position: relative;
+                bottom: 176px;
+                left:69%
+            }
+            #kill-7{
+                position: relative;
+                bottom: 234px;
+                left:80%
+            }
         }
     </style>
 </head>
@@ -206,7 +676,7 @@
                     <a href="mailto:carloscaceres041@gmail.com"><img id="gmail" src="{% static 'img/Gmail-Logo.wine.svg' %}" alt="Gmail"></a>
                 </div>
                 <div class="link-2">
-                    <a href="#"><img id="whatsapp"src="{% static 'img/whatsapp.svg' %}" alt="WhatsApp"></a>
+                    <a href="" onclick="alert('UNDER DEVELOPEMENT CHECK BACK SOON')"><img id="whatsapp"src="{% static 'img/whatsapp.svg' %}" alt="WhatsApp"></a>
                 </div>
                 <div class="link-3">
                     <a target="_blank" rel="noopener" href="https://github.com/carlitos-206"><img id="github" src="{% static 'img/git-hub.svg' %}" alt="GitHub"></a>
@@ -225,6 +695,10 @@
                 <div class="link-7">
                     <a target="_blank" rel="noopener" href="https://www.youtube.com/channel/UCfJtIgTcGEX_D0TLjFi-COQ"><img id="youtube" src="{% static 'img/youtube-logo.svg' %}" alt="YouTube"></a>
                 </div>
+                <div class="link-8">
+                    <a target="_blank" rel="noopener" href="https://stackoverflow.com/users/17113680/carlitos"><img id="SO" src="{% static 'img/logo-stackoverflow-trim.png' %}" alt="YouTube"></a>
+
+                </div>
             </div>
             <div class="content">
                 <div class="accordion accordion-flush" id="accordionFlushExample">
@@ -236,7 +710,8 @@
                         </h2>
                     <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
                         <div class="accordion-body">
-                            <p>Hello I am recent gradute of the Coding Dojo in Bellevue, Wa. In my time there I accuquired a Full Stack certification in Python for Web Developement.</p>
+                            <p>Hello,</p> 
+                            <p>I am recent gradute of the Coding Dojo in Bellevue, Wa. In my time there I accuquired a Full Stack certification in Python for Web Developement.</p>
                             <p>I have the ability to create Web Applictions using Python's framework Django 2.2 with Object Relational Mapper (ORM) and deploy them on AWS EC2 Virtual Machine's using Linux 20.04LTS servers. I consider myself to be creative and attentive to detail, reason why have been able to enjoy CSS as a Front-End language and naturally dive into some of the CSS frameworks.</p>
                             <p>I also have comprehension of JavaScript as well as the JQuery library. I can also say that I feel confident in my relational database building and mainting using MySQL and it's workbench. As for version control, I am proeficient in Git Hub and the Git Bash Shell.</p>
                             <p>I also feel confident using Windows OS, MacOS and my favorite the Linux Ubuntu OS. I personally enjoy being able to use any computer that's handed to me and begin to work. This was a skill that was proven usefull when it came to group work while at school. It became easy for me to aide my class mates and advance with our projects with ease.</p>
@@ -344,14 +819,23 @@
                         </h2>
                         <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
                             <div class="accordion-body">
-                                <ul>
-                                    <li><a class="projects" href="https://github.com/carlitos-206/useragent-Django2.2.git" target="_blank">User Agent - Django 2.2</a></li>
+                                <ul class="project-list">
+                                    <h5 class="project-section"> Solo Projects </h5>
                                         <ul>
-                                            <li class="git-clone">$ git clone 'https://github.com/carlitos-206/useragent-Django2.2.git'</li>
+                                            In Production
+                                                <ul>
+                                                    <li><a href="https://github.com/carlitos-206/js-browser-game-django" target="_blank">In Browser Game using JS in Django 2.2</a></li>
+                                                </ul>
+                                            Complete
+                                            <ul>
+                                                <li><a class="projects" href="https://github.com/carlitos-206/useragent-Django2.2.git" target="_blank">User Agent - Django 2.2</a></li>
+                                                <li><a class="projects" href="https://github.com/carlitos-206/first-app.git" target="_blank">Terminal App Using Python</a></li>
+                                            </ul>
                                         </ul>
-                                    <li><a class="projects" href="https://github.com/carlitos-206/first-app.git" target="_blank">Terminal App Using Python</a></li>
-                                    <ul>
-                                            <li class="git-clone">$ git clone 'https://github.com/carlitos-206/first-app.git'</li>
+                                    <h5 class="project-section"> School Projects </h5>
+                                        <ul>
+                                            <li><a href="https://github.com/carlitos-206/group_project_dojo_2021" target="_blank">Group Project</a></li>
+                                            <li><a href="https://github.com/carlitos-206/solo_project_1" target="_blank">Solo Project</a></li>
                                         </ul>
                                 </ul>
                             </div>
