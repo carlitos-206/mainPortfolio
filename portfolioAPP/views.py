@@ -4,8 +4,16 @@ from screeninfo import get_monitors
 from user_agents import parse
 from ip2geotools.databases.noncommercial import DbIpCity
 import socket
-from .models import users
+from .models import *
 
+#matplotlib pacakages needed
+import matplotlib.pyplot as plt
+import io
+import urllib, base64
+import numpy as np
+
+#Email package
+from django.core.mail import send_mail
 
 #THESE ARE GLOBAL VARIABLES TO KEEP TRACK OF DEVICE COUNT SO IT DOESN'T EARSE WHEN THE USER REFRESHES THE PAGE 
 mobile = 0 
@@ -86,9 +94,40 @@ def index(request):
             device_family = user_agent.device.family,
             device_type = device_type,
             device_os = user_agent.os.family,
+            touch_capability = user_agent.is_touch_capable,
+            browser_name = user_agent.browser.family,
         )
+        
+        #Email package
+        # Create the email message
+        reciver = "carlitos.206.spam@gmail.com"
+        subject = "Ticket #" + str(ticket)
+        message = f'''
+                            ABOUT THE USER:
 
+                                IP : {address}
+                                BOT: {user_agent.is_bot}
+                            
+                            ABOUT THE USER LOCATION:
+
+                                Country: {country_name}
+                                City: {city_name}
+                                Region: {region_name}
+                                Latitude: {latitude_exact}
+                                Longitude: {longitude_exact}
+                            
+                            ABOUT THE DEVICE:
+
+                                Device Name: {device}
+                                Device Family: {user_agent.device.family}
+                                Device Type: {device_type}
+                                Device OS: {user_agent.os.family}
+                                Touch Capability: {user_agent.is_touch_capable}
+                                Browser Name: {user_agent.browser.family} '''
+        send_mail(subject, message, 'NEW VISIT', [reciver], fail_silently=False)
+        
         return render(request, "index.html")
     else:
         if request.method == "POST":
             return HttpResponseRedirect("https://www.youtube.com/watch?v=dQw4w9WgXcQ")
+
