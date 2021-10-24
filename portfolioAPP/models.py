@@ -1,15 +1,5 @@
 from django.db import models
 
-#global variables
-mobile = 0
-tablet = 0
-desktop = 0
-
-class device_count(models.Model):
-    mobile_count = mobile
-    tablet_count = tablet
-    desktop_count = desktop
-
 
 class users(models.Model):
 
@@ -37,17 +27,7 @@ class users(models.Model):
     device_type = models.CharField(max_length=255)
     device_os = models.CharField(max_length=255)
     touch_capability = models.BooleanField(default=False)
-    device_count = models.CharField(max_length=255)
-    if device_count == "Mobile":
-        global mobile
-        mobile += 1
-    elif device_count == "Tablet":
-        global tablet
-        tablet += 1
-    elif device_count == "Desktop":
-        global desktop  
-        desktop += 1
-
+    browser_name = models.CharField(max_length=255)
 # dates
     created_at = models.DateTimeField(auto_now_add=True)
     updated_at = models.DateTimeField(auto_now=True)
