@@ -1,17 +1,11 @@
 from django.db.models.expressions import F
 from django.http.response import HttpResponse, HttpResponseRedirect
 from django.shortcuts import render, HttpResponse, redirect
-from screeninfo import get_monitors
 from user_agents import parse
 from ip2geotools.databases.noncommercial import DbIpCity
 import socket
 from .models import *
 
-#matplotlib pacakages needed
-import matplotlib.pyplot as plt
-import io
-import urllib, base64
-import numpy as np
 
 #Email package
 from django.core.mail import send_mail
