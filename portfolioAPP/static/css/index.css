@@ -1084,7 +1084,7 @@
                 width: min-content;
                 height: min-content;
                 position: relative;
-                left: 50%;
+                left: 48%;
                 top: -10px;
                 position: absolute;
             }
@@ -1095,8 +1095,8 @@
                 width: min-content;
                 height: min-content;
                 position: relative;
-                left: 78%;
-                bottom: -50px;
+                left: 73%;
+                bottom: -42px;
                 position: absolute;
             }
             #SO{
@@ -1175,7 +1175,7 @@
         }
         
         #flush-collapseTwo{
-            height: 102vh;
+            height: 106vh;
         }
         .category{
             font-weight: bold;
@@ -1420,7 +1420,7 @@
         }
         
         #flush-collapseTwo{
-            height: 103vh;
+            height: 106vh;
         }
         .category{
             font-weight: bold;
@@ -1665,7 +1665,7 @@
         }
         
         #flush-collapseTwo{
-            height: 100vh;
+            height: 102vh;
         }
         .category{
             font-weight: bold;

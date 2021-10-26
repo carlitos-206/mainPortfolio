@@ -120,7 +120,7 @@ EMAIL_HOST = 'smtp.gmail.com'
 EMAIL_USE_TLS = True
 EMAIL_PORT = 587
 EMAIL_HOST_USER = 'carlitos.206.spam@gmail.com'
-EMAIL_HOST_PASSWORD = 'Carlitos.206!'
+EMAIL_HOST_PASSWORD = 'spamPASSWORD!@#123!'
 
 
 # Static files (CSS, JavaScript, Images)
