@@ -6,6 +6,8 @@ from ip2geotools.databases.noncommercial import DbIpCity
 import socket
 from .models import *
 
+# def index(request):
+#     return render(request, 'index.html')
 
 #Email package
 from django.core.mail import send_mail

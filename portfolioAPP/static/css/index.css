@@ -460,7 +460,7 @@
         }
         
         #flush-collapseTwo{
-            height: 117vh;
+            height: 120vh;
         }
         .category{
             font-weight: bold;
@@ -483,12 +483,227 @@
 
 
 
-/*mobile landscape is not needed since there isn't features like videos 
+/* mobile landscape is not needed since there isn't features like videos  */
 
 @media only screen and (min-width:480px){
+    .wrapper{
+        display: flex;
+        justify-content: center;
+    }
+    .profile-card {
+        justify-content: center;
+        background-color: rgba(255, 255, 255, 0.467);
+        backdrop-filter: blur(7px);
+        width: 85%;
+        height: fit-content;
+        position: relative;
+        top: 25px;
+        border-radius: 10%;
+    }
+        @keyframes bio-img-animation {
+            50% {
+                border-color: rgba(74, 74, 173, 0.849);
+            }
+        }
+        #bio-img{
+            width: 30%;
+            border-radius: 50% 50%;
+            border:solid 2px;
+            animation: bio-img-animation .5s infinite;
+            margin: 2%;
+        }
+        .bio-name{
+            padding: 1px;
+            width: fit-content;
+            position: relative;
+            left: 32.5%;
+            height:min-content;
+            bottom: 100px;
+        }
+        #name {
+            font-size: calc(1rem + .8vw);
+        }
+        .social-media{
+            width: 70%;
+            height: min-content;
+            position: relative;
+            left: 30%;
+            bottom: 105px;
+        }
+        .link{
+            width: min-content;
+            height: min-content;
+            position: relative;
+            position: absolute;
+        }
+            #gmail{
+                width: 8.5vh;
+            }
+        .link-2{
+            width: min-content;
+            height: min-content;
+            position: relative;
+            left: 28%;
+            position: absolute;
+        }
+            #whatsapp{
+                width: 5vh;
+            }
+        .link-3{
+            width: min-content;
+            height: min-content;
+            position: relative;
+            left: 50%;
+            position: absolute;
+        }
+            #github{
+                width: 5.5vh;
+            }
+        .link-4{
+            width: min-content;
+            height: min-content;
+            position: relative;
+            left: 72%;
+            position: absolute;
+        }
+            #linkedin{
+                width: 5.3vh;
+            }
 
-}
-*/
+        .social-media-2{
+            width: 70%;
+            height: min-content;
+            position: relative;
+            left: 30%;
+            bottom: 56px;
+        }
+        .link-5{
+            width: min-content;
+            height: min-content;
+            position: relative;
+            left: 5%;
+            position: absolute;
+        }
+        #ig{
+            width: 5vh;
+        }
+        .link-6{
+            width: min-content;
+            height: min-content;
+            position: relative;
+            left: 28%;
+            position: absolute;
+        }
+        #upwork{
+            width: 5vh;
+            border-radius: 20%;
+        }
+        .link-7{
+            width: min-content;
+            height: min-content;
+            position: relative;
+            left: 47%;
+            bottom: -50px;
+            position: absolute;
+        }
+        #youtube{
+            width: 7vh;
+        }
+        .link-8{
+            width: min-content;
+            height: min-content;
+            position: relative;
+            left: 72%;
+            bottom: -45px;
+            position: absolute;
+        }
+        #SO{
+            width: 5vh;
+        }
+        #section-label-1{
+            position: relative;
+            left: 25%;
+        }
+        #section-label-2{
+            position: relative;
+            left: 30%;
+        }
+        #section-label-3{
+            position: relative;
+            left: 25%;
+        }
+        #p-emoji{
+            display: flex;
+            justify-content: center;
+            font-size: 10vh;
+            height: min-content;
+        }
+        .content{
+            width: 90%;
+            height: fit-content;
+            position: relative;
+            left: 5%;
+            bottom: 20px;
+        }
+        h3 {
+            position: relative;
+            top: 5px;
+            font-family: 'Times New Roman', Times, serif;
+        }
+        #skill-title{
+            font-weight:bolder; 
+            font-size:2.5vh; 
+            text-align:center;
+            width: 100%;
+        }
+        li {
+            font-size: 1.9vh;
+        }
+        .gifs{
+            height: 25vh;
+        }
+        #yellow-gif{
+            position: relative;
+            bottom: 495px;
+            right: 35%;
+            width: 55%;
+        }
+        #fish-gif{
+            width: 90%;
+            position: relative;
+            left: 10%;
+            bottom: 155px;
+            z-index: +1;
+        }
+        #floor-sign{
+            width: 40%;
+            position: relative;
+            bottom: 265px;
+        }
+        
+        #flush-collapseTwo{
+            height: 117vh;
+        }
+        .category{
+            font-weight: bold;
+        }
+        #resume-pdf{
+            position: relative;
+            top: 25px;
+            font-size:2vh;
+        }
+        .projects{
+            font-size: 2.15vh;
+        }
+
+        .git-clone{
+            display: none;
+        }
+
+    }
+
+
+
 
 
 /* tablet portrait */
