@@ -1,3 +1,3 @@
-# THIS HAS BEEN DEPRICATED SEE [JSPortfplio](https://github.com/carlitos-206/JSPortfolio)
+# THIS HAS BEEN DEPRICATED SEE [JSPortfolio](https://github.com/carlitos-206/JSPortfolio)
 
 WELCOME TO MY PORTFOLIOS SOURCE CODE TO RUN IT IN A LOCAL SERVER READ howTo.txt
